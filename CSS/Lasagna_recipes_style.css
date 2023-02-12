@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFBEB;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+
+}
+
+h2, h4 {
+  margin: 20px 0px;
+}
+
+.heading {
+  font-size: 35px;
+}
+
+/* NavBar */
+.elements {
+  width: 100%;
+  height: 60px;
+  background-color: #F2921D;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.elements ul li {
+  height: 100%;
+  padding: 10px;
+  float: left;
+  margin: 10px;
+  list-style: none;
+}
+
+.elements ul li:hover {
+  background-color: #FFFBEB;
+  color: #F2921D;
+}
+
+.logo_img {
+  margin-right: 980px;
+  
+}
+
+/* Grid container */
+.grid_container {
+  margin-top: 20px ;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  
+}
+/* Title Heading */
+/* How do i get the heading to move to the right a little bit more, is width:300px really the answer? */
+.grid_itemHead {
+  margin-top: 15px;
+  width: 300px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+/* Reference */
+/* Is margin-top 100px really the answer? */
+.grid_itemReference {
+  margin-top: 110px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+}
+
+/* Img */
+.grid_itemImg {
+  padding: 20px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.grid_itemImg img {
+  width: 500px;
+}
+
+/* Ingredients */
+.grid_itemIngredients {
+  margin-top: 170px;
+  grid-column: 2 / 3;
+  grid-row: 1/ 2;
+}
+
+.Ingredient_list {
+  list-style: none;
+  line-height: 1.5em;
+}
+
+/* Meal Description */
+.grid_itemDescrp {
+  margin-top: 600px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+}
+
+/* Stats for Meal Prep */
+.Stats_grid_container {
+  grid-column: 3/3;
+  grid-row: 1 / 1;
+}
+.Stats_grid_container ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 30px 45px;
+  margin-right: 100px;
+}
+.data_stats ul {
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.data_stats {
+  margin: 60px 30px;
+  grid-column: 3/3;
+  grid-row: 1 / 1;
+}
+
+/* Instructions */
+.grid-itemDirections {
+  width: 400px;
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+  margin: 100px 0px;
+}
+
+.grid-itemDirections p {
+  margin-bottom: 30px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #F2921D;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+
+
